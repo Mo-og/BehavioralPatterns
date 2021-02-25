@@ -1,6 +1,6 @@
 package Memento;
 
-public class Main {
+public class Memento_Main {
     public static void main(String[] args) {
         SomeFile_Originator file = new SomeFile_Originator("a; b; c; d");
         BackupManager_Caretaker caretaker = new BackupManager_Caretaker();
