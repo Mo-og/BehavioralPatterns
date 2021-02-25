@@ -3,7 +3,7 @@ package Command;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Command_Main {
+public class Main_Command {
     public static void main(String[] args) {
         /*RemoteControl remoteControl = new RemoteControl(); //создаем пулт управления
         Engine engine = new Engine();   // создаем двигатель
