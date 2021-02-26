@@ -1,27 +1,31 @@
 package Iterator;
 
-public class Database implements Container {
-    private String[] content =
-            {"Roger Stewart. Web-designer",
-                    "Andrew Scott. Android Developer",
-                    "Nicolas Smith. iOS developer"};
+public class Data implements Aggregate {
+    private final String[] data = {
+            "Param 1",
+            "Param 2",
+            "Param 3",
+            "Param 4",
+            "Param 5"
+    };
 
     @Override
-    public Iterator getIterator() {
-        return new DatabaseIterator();
+    public Iterator createIterator() {
+        return new DataIterator();
     }
 
-    private class DatabaseIterator implements Iterator {
-        private int index;
+
+    private class DataIterator implements Iterator {
+        private int nextPointer;
 
         @Override
         public boolean hasNext() {
-            return index < content.length;
+            return nextPointer < data.length;
         }
 
         @Override
         public Object next() {
-            if (this.hasNext()) return content[index++];
+            if (this.hasNext()) return data[nextPointer++];
             return null;
         }
     }

@@ -1,5 +1,5 @@
 package Iterator;
 
-public interface Container {
-    Iterator getIterator();
+public interface Aggregate {
+    Iterator createIterator();
 }

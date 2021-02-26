@@ -29,8 +29,7 @@ public class CommandsController {
             history.add("initiate");
             donePointer = history.lastIndexOf("initiate");
         } else {
-            donePointer++;
-            history.set(donePointer, "initiate");
+            history.set(donePointer++, "initiate");
         }
 
     }
@@ -41,8 +40,7 @@ public class CommandsController {
             history.add("clear");
             donePointer = history.lastIndexOf("clear");
         } else {
-            donePointer++;
-            history.set(donePointer, "clear");
+            history.set(donePointer++, "clear");
         }
     }
 
@@ -52,8 +50,7 @@ public class CommandsController {
             history.add("add");
             donePointer = history.lastIndexOf("add");
         } else {
-            donePointer++;
-            history.set(donePointer, "add");
+            history.set(donePointer++, "add");
         }
     }
 
@@ -84,8 +81,7 @@ public class CommandsController {
             case "multiply" -> divide.execute();
             case "divide" -> multiply.execute();
         }
-        undonePointer = donePointer;
-        donePointer -= 1;
+        undonePointer = donePointer--;
     }
 
     public void redo() {
