@@ -1,8 +1,5 @@
 package Command;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main_Command {
     public static void main(String[] args) {
         ListHandler handler = new ListHandler();

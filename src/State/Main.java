@@ -5,7 +5,6 @@ public class Main {
         ChangedFile changedFile = new ChangedFile();
         System.out.println(changedFile.getState());
 
-
         Modified modified = new Modified();
         modified.changeState(changedFile);
         System.out.println(changedFile.getState());
