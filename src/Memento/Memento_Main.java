@@ -10,7 +10,7 @@ public class Memento_Main {
         file.processFile();
         System.out.println("Now file is: ");
         file.print();
-        caretaker.loadState(file);
+        caretaker.loadState(file,0);
         System.out.println("Now file is: ");
         file.print();
     }

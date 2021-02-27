@@ -6,7 +6,7 @@ public class Main {
 
         Developer_Visitor junior = new DeveloperJunior_Visitor();
         Developer_Visitor senior = new DeveloperMiddle_Visitor();
-
+//dfgdf
         tasksForTeamElement.accept(junior);
         System.out.println("\n");
         tasksForTeamElement.accept(senior);
